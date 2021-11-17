@@ -11,4 +11,4 @@ elif(n== "Mendatar"):
     m = int(input("Masukkan kolom: "))
     print('#'*m)
 else:
-    print("Pola tidak dikenali ")
+    print("Pola tidak dikenali")

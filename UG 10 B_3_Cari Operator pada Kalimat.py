@@ -27,4 +27,4 @@ elif "kurang" in kata:
 elif "kali" in kata:
     print("Hasil perkalian",bil1,"dengan",bil2,"adalah",bil1 * bil2)
 elif "bagi" in kata:
-    print("Hasil pengurangan",bil1,"dengan",bil2,"adalah",bil1 - bil2)
+    print("Hasil pembagian",bil1,"dengan",bil2,"adalah",bil1 / bil2)

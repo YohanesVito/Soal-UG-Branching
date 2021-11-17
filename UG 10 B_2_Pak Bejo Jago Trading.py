@@ -38,7 +38,7 @@ macd = str(input("Masukkan kondisi MACD: "))
 kondisi = ""
 
 if rsi >= 70:
-    kondisi+=  "RSI Overbougt dan"
+    kondisi+=  "RSI lebih dari sama dengan 70 dan"
     if macd == "golden-cross":
         kondisi += " MACD Golden-cross,"
         keputusan = " Tunggu MACD sampai death-cross"
@@ -47,7 +47,7 @@ if rsi >= 70:
         keputusan = " saatnya Jual"
         
 elif rsi <= 30:
-    kondisi += "RSI Oversold dan"
+    kondisi += "RSI kurang dari sama dengan 30 dan"
     if macd == "golden-cross":
         kondisi += " MACD Golden-cross,"
         keputusan = " saatnya Beli"
@@ -55,7 +55,10 @@ elif rsi <= 30:
     elif macd == "death-cross":
         kondisi += " MACD Death-cross,"
         keputusan = " Tunggu MACD sampai Golden-cross"
-      
+else:
+    kondisi += "RSI berada di area 30 - 70,"
+    keputusan = " Bukan saatnya membeli maupun menjual"
+    
 print(kondisi+keputusan)
 
  
